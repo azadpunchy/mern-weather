@@ -7,6 +7,12 @@ node_modules
 
 # my dependencies
 graphics
+index.css
+index.css.map
+weather.css
+weather.css.map
+manifest.json
+robots.txt
 
 # testing
 /coverage

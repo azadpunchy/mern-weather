@@ -1,0 +1,96 @@
+.background_img {
+  //   border: 1px solid red;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-image: url("./images/sunny.png"); // define it in component so it will change according to weather
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  filter: blur(0.15rem);
+  z-index: -1;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  //   border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  //   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 20rem;
+  //   backdrop-filter: blur(2px);
+  border-radius: 25px;
+  background-color: rgba(197, 199, 201, 0.562);
+  //   background-image: url("./images/day.png"); // define it in component so it will change according to weather
+  //   background-position: center;
+  //   background-size: 100% 100%;
+  //   background-repeat: no-repeat;
+  position: relative;
+}
+.search {
+  position: absolute;
+  top: 1rem;
+  input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: black;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    opacity: 70%;
+    cursor: pointer;
+  }
+  input:focus {
+    opacity: 100%;
+  }
+}
+.weatherIcon {
+  position: relative;
+  top: 1rem;
+  animation: alternate-reverse infinite;
+  //   backdrop-filter: 5rem;
+  filter: blur(0.2rem);
+  //animation
+  animation-name: stretch;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes stretch {
+  0% {
+    transform: scale(1);
+    border-radius: 100%;
+  }
+  50% {
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+.temprature {
+  position: relative;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
