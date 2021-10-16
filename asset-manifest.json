@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/test_forks/static/css/main.037b60b7.chunk.css",
+    "main.js": "/test_forks/static/js/main.2233099f.chunk.js",
+    "main.js.map": "/test_forks/static/js/main.2233099f.chunk.js.map",
+    "runtime-main.js": "/test_forks/static/js/runtime-main.38dc3ecf.js",
+    "runtime-main.js.map": "/test_forks/static/js/runtime-main.38dc3ecf.js.map",
+    "static/js/2.8909669d.chunk.js": "/test_forks/static/js/2.8909669d.chunk.js",
+    "static/js/2.8909669d.chunk.js.map": "/test_forks/static/js/2.8909669d.chunk.js.map",
+    "static/js/3.1e01b5ab.chunk.js": "/test_forks/static/js/3.1e01b5ab.chunk.js",
+    "static/js/3.1e01b5ab.chunk.js.map": "/test_forks/static/js/3.1e01b5ab.chunk.js.map",
+    "index.html": "/test_forks/index.html",
+    "static/css/main.037b60b7.chunk.css.map": "/test_forks/static/css/main.037b60b7.chunk.css.map",
+    "static/js/2.8909669d.chunk.js.LICENSE.txt": "/test_forks/static/js/2.8909669d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/test_forks/static/media/sunny.ff8cf394.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38dc3ecf.js",
+    "static/js/2.8909669d.chunk.js",
+    "static/css/main.037b60b7.chunk.css",
+    "static/js/main.2233099f.chunk.js"
+  ]
+}
