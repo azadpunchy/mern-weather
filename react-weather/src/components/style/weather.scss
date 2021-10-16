@@ -28,9 +28,9 @@
   align-items: center;
   width: 20rem;
   height: 20rem;
-  //   backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   border-radius: 25px;
-  background-color: rgba(197, 199, 201, 0.562);
+  background-color: rgba(124, 165, 255, 0.226);
   //   background-image: url("./images/day.png"); // define it in component so it will change according to weather
   //   background-position: center;
   //   background-size: 100% 100%;
@@ -51,6 +51,7 @@
   }
   input:focus {
     opacity: 1;
+    cursor: auto;
   }
 }
 .weatherIcon {
@@ -58,7 +59,7 @@
   top: 1rem;
   animation: alternate-reverse infinite;
   //   backdrop-filter: 5rem;
-  filter: blur(0.2rem);
+  // filter: blur(0.2rem);
   //animation
   animation-name: stretch;
   animation-duration: 1.5s;
@@ -80,6 +81,44 @@
     transform: scale(1.5);
   }
 }
+
+//tooltip
+
+.weatherIcon {
+  span {
+    position: absolute;
+    top: 10%;
+    margin-top: -50px;
+    padding: 0.1rem 0.3rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.842);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(121, 182, 201, 0.692);
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+      0 5px 15px rgba(0, 0, 0, 0.07);
+
+    pointer-events: none;
+    user-select: none;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    span {
+      top: 100%;
+      opacity: 1;
+    }
+  }
+  &:active {
+    span {
+      top: 100%;
+      opacity: 0.9;
+    }
+  }
+}
+
 .temprature {
   position: relative;
   top: 40px;
@@ -88,9 +127,19 @@
   justify-content: center;
   align-items: center;
   h3 {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
   }
+  b {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+.feel {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
 }

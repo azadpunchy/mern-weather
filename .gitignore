@@ -1,9 +1,10 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Author : azadpunchy
 
 # dependencies
 node_modules
 /.pnp
 .pnp.js
+.vscode
 
 # my dependencies
 graphics
@@ -13,6 +14,8 @@ weather.css
 weather.css.map
 manifest.json
 robots.txt
+day
+night
 
 # testing
 /coverage
